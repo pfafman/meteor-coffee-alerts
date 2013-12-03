@@ -25,7 +25,7 @@ Tinytest.addAsync "Errors template works", (test, done) ->
   Meteor.setTimeout ->
     test.equal CoffeeAlerts.collection.find(seen: false).count(), 0
     test.equal CoffeeAlerts.collection.find({}).count(), 1
-    CoffeeAlerts.clear()
+    CoffeeAlerts.clearSeen()
     test.equal CoffeeAlerts.collection.find(seen: true).count(), 0
     done()
   , 500
