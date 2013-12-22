@@ -1,6 +1,7 @@
 
-Template.coffeeAlerts.helpers alerts: ->
-    CoffeeAlerts.collection.find()
+Template.coffeeAlerts.helpers 
+    alerts: ->
+        CoffeeAlerts.collection.find()
 
 Template.coffeeAlert.rendered = ->
     alert = @data

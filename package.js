@@ -4,7 +4,13 @@ Package.describe({
 
 Package.on_use(function(api, where) {
   
-    api.use(['minimongo', 'mongo-livedata', 'templating', 'coffeescript'], 'client');
+    api.use([
+        'minimongo', 
+        'mongo-livedata', 
+        'templating',
+        'iron-router', 
+        'coffeescript'
+    ], 'client');
   
     api.add_files(['lib/alerts.coffee', 'lib/alerts_list.html', 'lib/alerts_list.coffee'], 'client');
 
