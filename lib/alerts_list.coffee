@@ -8,10 +8,16 @@ Template.coffeeAlert.rendered = ->
     Meteor.defer ->
         if CoffeeAlerts.collection.find().count() > 0
             window.scroll(0,0)  # Scroll to top
-        CoffeeAlerts.collection.update alert._id,
-            $set:
-                seen: true
-
+        Meteor.setTimeout ->
+            # Doing a longer timeout to allow routing
+            CoffeeAlerts.collection.update alert._id,
+                $set:
+                    seen: true
+        , 1000
+        Meteor.setTimeout ->
+            # Doing a longer timeout to allow routing
+            CoffeeAlerts.collection.remove(alert._id)
+        , 10000
 
 if Router?
     # this hook will run on all routes
