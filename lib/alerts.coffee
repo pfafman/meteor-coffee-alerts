@@ -9,7 +9,6 @@ CoffeeAlerts =
             seen: false
             type: type
 
-
     error: (message) ->
         CoffeeAlerts.alert(message, 'danger')
 

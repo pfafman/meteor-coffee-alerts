@@ -21,6 +21,6 @@ Template.coffeeAlert.rendered = ->
 
 if Router?
     # this hook will run on all routes
-    Router.before ->
+    Router.onBeforeAction ->
         CoffeeAlerts.clearSeen()
 
