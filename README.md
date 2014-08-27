@@ -12,7 +12,7 @@ This is based on the sample from the [Discover Meteor book]
 Install via atmosphere.
 
 ```bash
-mrt add coffee-alerts
+mrt add pfafman:coffee-alerts
 ```
 
 ##Usage
