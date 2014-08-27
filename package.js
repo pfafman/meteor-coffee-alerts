@@ -11,7 +11,7 @@ Package.on_use(function(api, where) {
       'minimongo', 
       'mongo-livedata', 
       'templating',
-      'iron:router@9.1', 
+      'iron:router@0.9.1', 
       'coffeescript'
   ], 'client');
 
@@ -33,7 +33,7 @@ Package.on_test(function(api) {
       'minimongo', 
       'mongo-livedata', 
       'templating',
-      'iron:router'
+      'iron:router@0.9.1'
   ], 'client');
   api.add_files('alerts_tests.coffee', 'client'); 
 });
