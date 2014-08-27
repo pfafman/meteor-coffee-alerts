@@ -11,7 +11,7 @@ Package.on_use(function(api, where) {
         'minimongo', 
         'mongo-livedata', 
         'templating',
-        'iron-router', 
+        'iron:router', 
         'coffeescript'
     ], 'client');
   
