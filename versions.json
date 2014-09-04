@@ -10,7 +10,7 @@
     ],
     [
       "blaze",
-      "1.0.0"
+      "1.0.3"
     ],
     [
       "blaze-tools",
@@ -30,7 +30,7 @@
     ],
     [
       "deps",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "ejson",
@@ -50,7 +50,7 @@
     ],
     [
       "htmljs",
-      "1.0.0-cordova1"
+      "1.0.0"
     ],
     [
       "id-map",
@@ -82,11 +82,11 @@
     ],
     [
       "livedata",
-      "1.0.0"
+      "1.0.7"
     ],
     [
       "logging",
-      "1.0.0"
+      "1.0.2"
     ],
     [
       "meteor",
@@ -94,7 +94,7 @@
     ],
     [
       "minifiers",
-      "1.0.0"
+      "1.0.2"
     ],
     [
       "minimongo",
@@ -106,7 +106,7 @@
     ],
     [
       "observe-sequence",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "ordered-dict",
@@ -126,7 +126,7 @@
     ],
     [
       "routepolicy",
-      "1.0.0-cordova1"
+      "1.0.0"
     ],
     [
       "spacebars",
@@ -134,7 +134,7 @@
     ],
     [
       "spacebars-compiler",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "templating",
@@ -150,10 +150,10 @@
     ],
     [
       "webapp",
-      "1.0.0"
+      "1.0.2"
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.25",
+  "toolVersion": "meteor-tool@1.0.26",
   "format": "1.0"
 }
