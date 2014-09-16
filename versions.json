@@ -2,7 +2,11 @@
   "dependencies": [
     [
       "application-configuration",
-      "1.0.1"
+      "1.0.2"
+    ],
+    [
+      "base64",
+      "1.0.0"
     ],
     [
       "binary-heap",
@@ -17,6 +21,10 @@
       "1.0.0"
     ],
     [
+      "boilerplate-generator",
+      "1.0.0"
+    ],
+    [
       "callback-hook",
       "1.0.0"
     ],
@@ -26,7 +34,7 @@
     ],
     [
       "coffeescript",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "ddp",
@@ -34,11 +42,11 @@
     ],
     [
       "deps",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "ejson",
-      "1.0.1"
+      "1.0.2"
     ],
     [
       "follower-livedata",
@@ -54,7 +62,7 @@
     ],
     [
       "htmljs",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "id-map",
@@ -86,23 +94,23 @@
     ],
     [
       "logging",
-      "1.0.2"
-    ],
-    [
-      "meteor",
       "1.0.3"
     ],
     [
+      "meteor",
+      "1.1.0"
+    ],
+    [
       "minifiers",
-      "1.0.2"
+      "1.1.0"
     ],
     [
       "minimongo",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "mongo",
-      "1.0.4"
+      "1.0.5"
     ],
     [
       "mongo-livedata",
@@ -122,7 +130,7 @@
     ],
     [
       "reactive-dict",
-      "1.0.1"
+      "1.0.2"
     ],
     [
       "reactive-var",
@@ -134,7 +142,7 @@
     ],
     [
       "routepolicy",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "spacebars",
@@ -146,7 +154,7 @@
     ],
     [
       "templating",
-      "1.0.5"
+      "1.0.6"
     ],
     [
       "tracker",
@@ -154,7 +162,7 @@
     ],
     [
       "ui",
-      "1.0.1"
+      "1.0.2"
     ],
     [
       "underscore",
@@ -162,10 +170,14 @@
     ],
     [
       "webapp",
-      "1.0.3"
+      "1.1.1"
+    ],
+    [
+      "webapp-hashing",
+      "1.0.0"
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.27",
+  "toolVersion": "meteor-tool@1.0.30",
   "format": "1.0"
 }
