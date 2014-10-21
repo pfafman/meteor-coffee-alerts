@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A pattern to display application alerts via bootstrap to the user written in coffeescript",
-  version: "0.2.1",
+  version: "0.3.0",
   git: "https://github.com/pfafman/meteor-coffee-alerts.git"
 });
 
@@ -12,10 +12,16 @@ Package.on_use(function(api, where) {
       'mongo-livedata', 
       'templating',
       'iron:router@0.9.1', 
-      'coffeescript'
+      'coffeescript',
+      'less'
   ], 'client');
 
-  api.add_files(['lib/alerts.coffee', 'lib/alerts_list.html', 'lib/alerts_list.coffee'], 'client');
+  api.add_files([
+    'lib/alerts.coffee', 
+    'lib/alerts_list.html', 
+    'lib/alerts_list.coffee',
+    'lib/alerts.less'
+  ], 'client');
 
   if (api.export) {
       api.export('CoffeeAlerts')
