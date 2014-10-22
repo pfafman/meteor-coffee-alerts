@@ -1,25 +1,25 @@
 CoffeeAlerts =
   
-    # Local (client-only) collection 
-    collection: new Meteor.Collection(null)
-  
-    alert: (message, type) ->
-        CoffeeAlerts.collection.insert
-            message: message
-            seen: false
-            type: type
+  # Local (client-only) collection
+  collection: new Meteor.Collection(null)
 
-    error: (message) ->
-        CoffeeAlerts.alert(message, 'danger')
+  alert: (message, type="danger") ->
+    CoffeeAlerts.collection.insert
+      message: message
+      seen: false
+      type: type
 
-    info: (message) ->
-        CoffeeAlerts.alert(message, 'info')
+  error: (message) ->
+    CoffeeAlerts.alert(message, 'danger')
 
-    warning: (message) ->
-        CoffeeAlerts.alert(message, 'warning')
+  info: (message) ->
+    CoffeeAlerts.alert(message, 'info')
 
-    success: (message) ->
-        CoffeeAlerts.alert(message, 'success')
+  warning: (message) ->
+    CoffeeAlerts.alert(message, 'warning')
 
-    clearSeen: ->
-        CoffeeAlerts.collection.remove seen: true
+  success: (message) ->
+    CoffeeAlerts.alert(message, 'success')
+
+  clearSeen: ->
+    CoffeeAlerts.collection.remove seen: true
