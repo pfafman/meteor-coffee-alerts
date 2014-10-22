@@ -8,7 +8,7 @@ Package.on_use(function(api, where) {
   api.versionsFrom("METEOR@0.9.0");
   
   api.use([
-    'mongo',
+    'mongo@1.0.7',
     'minimongo', 
     'mongo-livedata', 
     'templating',
