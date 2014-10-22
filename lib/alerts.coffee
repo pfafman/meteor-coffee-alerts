@@ -1,7 +1,7 @@
 CoffeeAlerts =
   
   # Local (client-only) collection
-  collection: new Meteor.Collection(null)
+  collection: new Mongo.Collection(null)
 
   alert: (message, type="danger") ->
     CoffeeAlerts.collection.insert
