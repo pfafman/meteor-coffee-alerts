@@ -24,3 +24,21 @@ if Router?
   Router.onBeforeAction ->
     CoffeeAlerts.clearSeen()
 
+
+Template.coffeeAlert.helpers
+  icon: ->
+    switch @type
+      when 'info'
+        'info-circle'
+
+      when 'danger'
+        'exclamation'
+
+      when 'warning'
+        'warning'
+
+      when 'success'
+        'check'
+
+      else
+        null

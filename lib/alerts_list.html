@@ -9,7 +9,10 @@
 
 <template name="coffeeAlert">
   <div class="alert alert-{{type}} alert-dismissible" role="alert">
-    
+    {{#if icon}}
+      <i class="fa fa-{{icon}} icon"></i>
+    {{/if}}
+
     <button type="button" class="close" data-dismiss="alert">
       <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
     </button>
