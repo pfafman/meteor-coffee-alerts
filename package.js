@@ -13,7 +13,7 @@ Package.on_use(function(api, where) {
     'mongo-livedata', 
     'templating',
     'iron:router@1.0.0', 
-    'pfafman:font-awesome-4',
+    'pfafman:font-awesome-4@4.2.0',
     'coffeescript',
     'less'
   ], 'client');
