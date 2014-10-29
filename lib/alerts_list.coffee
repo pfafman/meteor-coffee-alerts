@@ -23,6 +23,7 @@ if Router?
   # this hook will run on all routes
   Router.onBeforeAction ->
     CoffeeAlerts.clearSeen()
+    @next()
 
 
 Template.coffeeAlert.helpers
