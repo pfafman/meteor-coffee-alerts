@@ -133,10 +133,6 @@
       "1.0.8"
     ],
     [
-      "mongo-livedata",
-      "1.0.6"
-    ],
-    [
       "observe-sequence",
       "1.0.3"
     ],
@@ -146,7 +142,7 @@
     ],
     [
       "pfafman:font-awesome-4",
-      "4.2.0_1"
+      "4.2.0_2"
     ],
     [
       "random",

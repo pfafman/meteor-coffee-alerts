@@ -1,5 +1,7 @@
-CoffeeAlerts =
+@CoffeeAlerts =
   
+  timeout: 5  # Timeout in seconds
+
   # Local (client-only) collection
   collection: new Mongo.Collection(null)
 
@@ -23,3 +25,10 @@ CoffeeAlerts =
 
   clearSeen: ->
     CoffeeAlerts.collection.remove seen: true
+
+# Remove seen on page change
+Router.onRun ->
+  console.log("CoffeeAlerts: remove seen alerts")
+  CoffeeAlerts.collection.remove
+    seen: true
+  @next()

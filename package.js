@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A pattern to display application alerts via bootstrap to the user written in coffeescript",
-  version: "0.5.0",
+  version: "0.5.1",
   git: "https://github.com/pfafman/meteor-coffee-alerts.git"
 });
 
@@ -8,15 +8,20 @@ Package.on_use(function(api, where) {
   api.versionsFrom("METEOR@1.0");
   
   api.use([
-    'mongo@1.0.7',
-    'minimongo', 
-    'mongo-livedata', 
+    'mongo',
     'templating',
     'iron:router@1.0.0', 
     'pfafman:font-awesome-4@4.2.0',
     'coffeescript',
     'less'
   ], 'client');
+
+  /*
+   'mongo@1.0.7',
+   'minimongo', 
+   'mongo-livedata', 
+   'templating',
+  */
 
   api.add_files([
     'lib/alerts.coffee', 
@@ -25,9 +30,11 @@ Package.on_use(function(api, where) {
     'lib/alerts.less'
   ], 'client');
 
+  
   if (api.export) {
-      api.export('CoffeeAlerts')
+  //    api.export('CoffeeAlerts')
   }
+  
 
 });
 
@@ -39,8 +46,6 @@ Package.on_test(function(api) {
     'test-helpers', 
     'coffeescript',
     'mongo', 
-    'minimongo', 
-    'mongo-livedata', 
     'templating',
     'iron:router'
   ], 'client');

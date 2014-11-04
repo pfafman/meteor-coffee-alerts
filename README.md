@@ -49,6 +49,13 @@ CoffeeAlerts.info(message) # A bootstrap3 "info" alert
 CoffeeAlerts.success(message) # A bootstrap3 "success" alert
 ```
 
+##Options
+
+```
+  CoffeeAlerts.timeout = 5 # Change timeout in seconds.  
+                           # Does not effect CSS timeout
+```
+
 ##Notes
 
 This is based on the example from the [Discover Meteor book]
