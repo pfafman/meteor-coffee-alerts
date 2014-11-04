@@ -28,7 +28,7 @@
 
 # Remove seen on page change
 Router.onRun ->
-  console.log("CoffeeAlerts: remove seen alerts")
+  #console.log("CoffeeAlerts: remove seen alerts")
   CoffeeAlerts.collection.remove
     seen: true
   @next()
