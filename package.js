@@ -1,6 +1,7 @@
 Package.describe({
+  name: "pfafman:coffee-alerts",
   summary: "A pattern to display application alerts via bootstrap to the user written in coffeescript",
-  version: "0.5.1_1",
+  version: "0.5.2",
   git: "https://github.com/pfafman/meteor-coffee-alerts.git"
 });
 
