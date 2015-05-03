@@ -1,7 +1,7 @@
 Package.describe({
   name: "pfafman:coffee-alerts",
   summary: "A pattern to display application alerts via bootstrap to the user written in coffeescript",
-  version: "0.5.2",
+  version: "0.5.3",
   git: "https://github.com/pfafman/meteor-coffee-alerts.git"
 });
 
@@ -11,10 +11,10 @@ Package.on_use(function(api, where) {
   api.use([
     'mongo',
     'templating',
-    'iron:router@1.0.0', 
-    'pfafman:font-awesome-4@4.2.0',
     'coffeescript',
-    'less'
+    'less',
+    'iron:router', 
+    'fortawesome:fontawesome',
   ], 'client');
 
   /*
