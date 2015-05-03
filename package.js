@@ -13,8 +13,8 @@ Package.on_use(function(api, where) {
     'templating',
     'coffeescript',
     'less',
-    'iron:router', 
-    'fortawesome:fontawesome',
+    'iron:router@1.0.7', 
+    'fortawesome:fontawesome@4.3.0',
   ], 'client');
 
   /*
